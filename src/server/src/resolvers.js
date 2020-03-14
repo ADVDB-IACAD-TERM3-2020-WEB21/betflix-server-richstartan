@@ -1,4 +1,5 @@
 // TODO: Import Mongoose here
+const mongoose = require('mongoose');
 // TODO: Connect to mongo here
 
 // TODO: Replace `{}` with actual Movie model
