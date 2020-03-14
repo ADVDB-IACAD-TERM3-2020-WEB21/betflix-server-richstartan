@@ -1,6 +1,7 @@
 // TODO: Import Mongoose here
 const mongoose = require('mongoose');
 // TODO: Connect to mongo here
+const {MongoClient} = require('mongodb');
 
 // TODO: Replace `{}` with actual Movie model
 const Movie = {}
