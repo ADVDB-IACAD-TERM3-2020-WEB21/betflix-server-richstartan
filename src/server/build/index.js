@@ -399,30 +399,9 @@ webpackContext.id = "./src sync recursive ^\\.\\/(schema|schema\\/index)\\.(gql|
   !*** ./src/resolvers.js ***!
   \**************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// TODO: Import Mongoose here
-const mongoose = __webpack_require__(/*! mongoose */ "mongoose"); // TODO: Connect to mongo here
-// TODO: Replace `{}` with actual Movie model
-
-
-const Movie = {};
-
-const getMovieList = async () => {
-  return await Movie.find({});
-};
-
-const resolvers = {
-  Query: {
-    movies: async () => {
-      const movieList = await getMovieList();
-      return movieList;
-    }
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = (resolvers);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\src\\resolvers.js: The only valid meta property for new is new.target (12:22)\n\n\u001b[0m \u001b[90m 10 | \u001b[39m})\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 | \u001b[39m\u001b[36mvar\u001b[39m movieSchema \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m\u001b[33m.\u001b[39mmongoose\u001b[33m.\u001b[39m\u001b[33mSchema\u001b[39m( {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 | \u001b[39m\ttitle\u001b[33m:\u001b[39m \u001b[33mString\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 | \u001b[39m\t\u001b[90m//nothing will update unless it is connected to the database.\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 | \u001b[39m})\u001b[0m\n    at Parser._raise (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:723:17)\n    at Parser.raiseWithData (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:716:17)\n    at Parser.raise (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:710:17)\n    at Parser.parseMetaProperty (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:9924:12)\n    at Parser.parseNew (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:10088:29)\n    at Parser.parseExprAtom (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:9825:21)\n    at Parser.parseExprSubscripts (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:9451:23)\n    at Parser.parseMaybeUnary (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:9431:21)\n    at Parser.parseExprOps (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:9301:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Tanque\\betflix-server-richstartan\\src\\server\\node_modules\\@babel\\parser\\lib\\index.js:9274:23)");
 
 /***/ }),
 
@@ -547,17 +526,6 @@ module.exports = require("friendly-errors-webpack-plugin");
 /***/ (function(module, exports) {
 
 module.exports = require("fs");
-
-/***/ }),
-
-/***/ "mongoose":
-/*!***************************!*\
-  !*** external "mongoose" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("mongoose");
 
 /***/ }),
 
